@@ -1,7 +1,7 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 
-import Menu from './Menu/Menu';
+import NavBar from './NavBar/NavBar';
 
 function App() {
   const [data, setData] = useState(null);
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div>
-      <Menu />
+      <NavBar />
       <p>
           {!data ? "Loading..." : data}
       </p>
